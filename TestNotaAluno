@@ -1,0 +1,20 @@
+package Alunous;
+
+public class NotaAlunoTeste {
+	public static void main(String[] args) {
+		// Criando instâncias da classe NotaAluno
+		NotaAluno aluno1 = new NotaAluno("João", 7.5f, 8.0f);
+		NotaAluno aluno2 = new NotaAluno("Maria", 4.0f, 6.0f);
+		NotaAluno aluno3 = new NotaAluno("Pedro", 3.0f, 2.5f);
+
+		// Testando os métodos
+		System.out.println("Nome do Aluno 1: " + aluno1.mostraNomeAluno());
+		aluno1.mostraStatusAluno();
+
+		System.out.println("Nome do Aluno 2: " + aluno2.mostraNomeAluno());
+		aluno2.mostraStatusAluno();
+
+		System.out.println("Nome do Aluno 3: " + aluno3.mostraNomeAluno());
+		aluno3.mostraStatusAluno();
+	}
+}
