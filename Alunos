@@ -1,0 +1,32 @@
+package Alunous;
+
+public class NotaAluno {
+	String nomeAluno;
+	float nota1;
+	float nota2;
+
+	public NotaAluno(String nomeAluno, float nota1, float nota2) {
+        this.nomeAluno = nomeAluno;
+        this.nota1 = nota1;
+        this.nota2 = nota2;
+    }
+	String mostraNomeAluno() {
+		return nomeAluno;
+	}
+
+
+	void mostraStatusAluno() {
+		float media = mediaDoAluno();
+
+		if (media >= 7) {
+			System.out.println("O aluno " + nomeAluno + " está aprovado com média " + media);
+		} else if (media >= 5) {
+			System.out.println("O aluno " + nomeAluno + " está em recuperação com média " + media);
+		} else {
+			System.out.println("O aluno " + nomeAluno + " está reprovado com média " + media);
+		}
+	}
+	public float mediaDoAluno() {
+		return (nota1 + nota2) / 2;
+	}
+}
